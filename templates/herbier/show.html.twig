@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Herbier{% endblock %}
+
+{% block body %}
+    <h1>Herbier</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ herbier.id }}</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{{ herbier.Date ? herbier.Date|date('d/m/Y') : '' }}</td>
+            <tr>
+                <th>Lieu</th>
+                <td>{{ herbier.Lieu }}</td>
+            <tr>
+                <th>Releve</th>
+                <td>{{ herbier.Releve ? herbier.Releve|join(', ') : '' }}</td>
+            </tr>
+            <tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_herbier_index') }}">back to list</a>
+
+    <a href="{{ path('app_herbier_edit', {'id': herbier.id}) }}">edit</a>
+
+    {{ include('herbier/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 10px;
+}
+
+.tableReleve th,
+.tableReleve td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.tableReleveVisu2 {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.tableReleveVisu {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.tableReleveVisu th,
+.tableReleveVisu td {
+    text-align: center;
+    padding: 0;
+}
+
+.tableReleveVisu2 th,   
+.tableReleveVisu2 td {
+    text-align: center;
+    padding: 0;
+}
+
+/*il s'agit du simple carré blanc */
+.square {
+    width: 10px;
+    height: 10px;
+    background: limegreen;
+    margin: 0 auto;
+}
+
+.empty {
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+}
+
+a {
+	display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	color: #fff;
+	background-color: #007bff;
+}
+
+
+a:hover{
+  	background-color: #0069d9;
+
+}

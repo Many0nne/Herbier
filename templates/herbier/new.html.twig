@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Herbier{% endblock %}
+
+{% block body %}
+    <h1>Create new Herbier</h1>
+
+    {{ include('herbier/_form.html.twig') }}
+
+    <a class="btn btn-primary" href="{{ path('app_herbier_index') }}">back to list</a>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% endblock %}
